@@ -1,0 +1,17 @@
+:root {
+    --darkBlue: #002637;
+    --gray: #68879C;
+    --lightGray: #E6F4F1;
+    --orange: #EB9929;
+}
+
+body {
+    background-color: var(--lightGray);
+    color: var(--darkBlue);
+    margin: 0;
+}
+
+.wrapper {
+    max-inline-size: 992px;
+    margin: auto;
+}
