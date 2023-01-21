@@ -4,7 +4,7 @@
   <div class="theFooter">
     <footer class="footer">
       <div class="wrapper">
-        <p>&copy;2023 ORZ Consultores</p>
+        <p>&copy; 2023 ORZ Consultores</p>
       </div>
     </footer>
   </div>
@@ -17,7 +17,9 @@
   padding-block: 10px;
 }
 
-.footer p{
-  text-align: center;
+@media screen and (max-width: 470px) {
+  .footer p {
+    text-align: center;
+  }
 }
 </style>

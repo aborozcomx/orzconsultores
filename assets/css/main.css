@@ -6,12 +6,19 @@
 }
 
 body {
-    background-color: var(--lightGray);
+    background-color: #fff;
     color: var(--darkBlue);
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
 
 .wrapper {
     max-inline-size: 992px;
     margin: auto;
+}
+
+@media screen and (max-width: 470px){
+    .wrapper {
+        max-inline-size: 468px;
+    }
 }

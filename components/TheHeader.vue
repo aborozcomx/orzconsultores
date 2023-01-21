@@ -5,7 +5,7 @@
     <div class="wrapper">
       <header class="header">
         <div class="header-top">
-          <img src="" alt="">
+          <img src="@/assets/images/logo.png" alt="Logo ORZ consultores">
           <div class="header-infoMenu">
             <div class="cardInfo">
               <img src="@/assets/icons/mail.svg" width="32" alt="">
@@ -17,7 +17,7 @@
             <div class="cardInfo">
               <img src="@/assets/icons/phone.svg" width="32" alt="">
               <div class="cardInfo-description">
-                <b>Telefono</b>
+                <b>Teléfono</b>
                 <a href="tel:9983629701">998 362 9701</a>
               </div>
             </div>
@@ -52,6 +52,7 @@
 .header-bottom, .header-top {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .header-menu, .header-socialMenu {
   display: flex;
@@ -73,6 +74,7 @@
 
 .header-infoMenu {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
 }
 
@@ -80,7 +82,9 @@
   display: flex;
   gap: 8px ;
   padding-inline: 25px;
+  transition: .5s all ease;
 }
+
 
 .cardInfo + .cardInfo {
   border-left: 1px solid var(--darkBlue);
@@ -93,5 +97,26 @@
 .cardInfo-description a {
   color: var(--darkBlue);
   text-decoration: none;
+}
+
+.cardInfo:hover {
+  color: var(--orange);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 470px) {
+  .cardInfo + .cardInfo {
+    border-left: none;
+  }
+
+  .header-top {
+    height: auto;
+    justify-content: center;
+    padding-block-start: 30px;
+  }
+
+  .header-top .header-infoMenu {
+    order: -1;
+  }
 }
 </style>
