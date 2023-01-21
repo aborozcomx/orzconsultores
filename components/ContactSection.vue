@@ -2,7 +2,9 @@
     <section class="contactSection" id="contacto">
         <div class="wrapper">
             <div class="contactSection-form">
-                <h2>Contáctanos</h2>
+                <h1>Contáctanos</h1>
+                <p>Si te interesa alguno de nuestros servicios o si necesitas más información, no dudes en ponerte en contacto con nosotros  
+                    enviándonos un mensaje a través de nuestro formulario o marcando al número de teléfono que se encuentra en el sitio web.</p>
                 <form action="#" @submit.prevent="handleSubmitForm">
                     <div class="form-group">
                         <label for="name">
@@ -171,6 +173,10 @@ button.disabled {
     border-radius: 10px;
     padding: 8px;
     margin-block-end: 20px;
+}
+
+.contactSection-form h1{
+    text-align: center;
 }
 @media screen and (max-width: 470px) {
     .wrapper {
