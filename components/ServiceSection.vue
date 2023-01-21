@@ -1,5 +1,5 @@
 <template>
-    <section class="servicesSection">
+    <section class="servicesSection" id="servicios">
         <div class="wrapper">
             <h1>Nuestros servicios</h1>
             <p>Más de 5 años de experiencia brindando servicios de alta calidad.</p>

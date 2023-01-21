@@ -7,27 +7,27 @@
         <div class="header-top">
           <img src="@/assets/images/logo.png" alt="Logo ORZ consultores">
           <div class="header-infoMenu">
-            <div class="cardInfo">
+            <a href="mailto:contabilidad@orzconsultores.com"><div class="cardInfo">
               <img src="@/assets/icons/mail.svg" width="32" alt="">
               <div class="cardInfo-description">
                 <b>Correo</b>
-                <a href="mailto:contabilidad@orzconsultores.com">contabilidad@orzconsultores.com</a>
+                <span>contabilidad@orzconsultores.com</span>
               </div>
-            </div>
-            <div class="cardInfo">
+            </div></a>
+            <a href="tel:9983629701"><div class="cardInfo">
               <img src="@/assets/icons/phone.svg" width="32" alt="">
               <div class="cardInfo-description">
                 <b>Teléfono</b>
-                <a href="tel:9983629701">998 362 9701</a>
+                <span>998 362 9701</span>
               </div>
-            </div>
+            </div></a>
           </div>
         </div>
         <nav class="header-bottom">
           <ul class="header-menu">
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
           </ul>
 
           <ul class="header-socialMenu">
@@ -82,7 +82,6 @@
   display: flex;
   gap: 8px ;
   padding-inline: 25px;
-  transition: .5s all ease;
 }
 
 
@@ -94,12 +93,15 @@
   flex-direction: column;
 }
 
-.cardInfo-description a {
+.header-top a {
   color: var(--darkBlue);
   text-decoration: none;
 }
 
-.cardInfo:hover {
+.cardInfo b {
+  transition: .5s all ease;
+}
+.cardInfo:hover b{
   color: var(--orange);
   cursor: pointer;
 }
