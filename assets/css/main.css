@@ -13,8 +13,9 @@ body {
 }
 
 .wrapper {
-    max-inline-size: 992px;
+    max-inline-size: 1444px;
     margin: auto;
+    padding-inline: 20px;
 }
 
 @media screen and (max-width: 470px){
