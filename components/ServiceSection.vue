@@ -26,8 +26,8 @@
     margin-block-end: 35px;
 }
 .servicesSection-content {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 24px;
 }
 

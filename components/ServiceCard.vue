@@ -23,8 +23,6 @@ const props = defineProps({
     border-radius: 12px;   
     padding-block: 40px;
     padding-inline: 30px;
-    flex: 1;
-    flex-basis: 300px;
     transition: .5s all ease;
 }
 

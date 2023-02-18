@@ -2,45 +2,51 @@
 
 <template>
   <div class="theHeader">
-    <div class="wrapper">
-      <header class="header">
-        <div class="header-top">
-          <img src="@/assets/images/logo.png" alt="Logo ORZ consultores">
-          <div class="header-infoMenu">
-            <a href="mailto:contabilidad@orzconsultores.com"><div class="cardInfo">
-              <img src="@/assets/icons/mail.svg" width="32" alt="">
-              <div class="cardInfo-description">
-                <b>Correo</b>
-                <span>contabilidad@orzconsultores.com</span>
-              </div>
-            </div></a>
-            <a href="tel:9983629701"><div class="cardInfo">
-              <img src="@/assets/icons/phone.svg" width="32" alt="">
-              <div class="cardInfo-description">
-                <b>Teléfono</b>
-                <span>998 362 9701</span>
-              </div>
-            </div></a>
+    <header class="header">
+      <div class="headerTop">
+        <div class="wrapper">
+          <div class="header-top">
+            <img src="@/assets/images/logo.png" alt="Logo ORZ consultores">
+            <div class="header-infoMenu">
+              <a href="mailto:contabilidad@orzconsultores.com"><div class="cardInfo">
+                <img src="@/assets/icons/mail.svg" width="32" alt="">
+                <div class="cardInfo-description">
+                  <b>Correo</b>
+                  <span>contabilidad@orzconsultores.com</span>
+                </div>
+              </div></a>
+              <a href="tel:9983629701"><div class="cardInfo">
+                <img src="@/assets/icons/phone.svg" width="32" alt="">
+                <div class="cardInfo-description">
+                  <b>Teléfono</b>
+                  <span>998 362 9701</span>
+                </div>
+              </div></a>
+            </div>
           </div>
         </div>
-        <nav class="header-bottom">
-          <ul class="header-menu">
-            <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-          </ul>
-
-          <ul class="header-socialMenu">
-            <li><a href="#"><img src="@/assets/icons/instagram.svg" width="24" alt=""></a></li>
-          </ul>
-        </nav>
-      </header>
-    </div>
+      </div>
+      <nav class="headerBottom">
+        <div class="wrapper">
+          <div class="headerBottom-content">
+            <ul class="header-menu">
+              <li><a href="#nosotros">Nosotros</a></li>
+              <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+    
+            <ul class="header-socialMenu">
+              <li><a href="#"><img src="@/assets/icons/instagram.svg" width="24" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
   </div>
 </template>
 
 <style scoped>
-.header-bottom {
+.headerBottom {
   background-color: var(--darkBlue);
   padding: 18px;
 }
@@ -49,7 +55,7 @@
   height: 145px;
   align-items: center;
 }
-.header-bottom, .header-top {
+.headerBottom-content, .header-top {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -63,7 +69,7 @@
   align-items: center;
 }
 
-.header-bottom a {
+.headerBottom a {
   color: var(--lightGray);
   text-decoration: none;
 }
