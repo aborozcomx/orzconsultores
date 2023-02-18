@@ -19,11 +19,4 @@ export default defineNuxtConfig({
     css: [
         '@/assets/css/main.css'
     ],
-    nitro: {
-        output: {
-            dir: 'output',
-            serverDir: 'output/server',
-            publicDir: 'output/public'
-        }
-    }
 })
